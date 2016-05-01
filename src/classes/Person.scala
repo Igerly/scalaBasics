@@ -1,3 +1,5 @@
+package classes
+
 class Person(_firstName: String, _lastName: String, _age: Int) {
   
   var firstName = _firstName

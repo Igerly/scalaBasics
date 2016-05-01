@@ -11,6 +11,12 @@ object TraitsExample extends App {
     }
   }
   
+  trait Yelling {
+    def yell(s: String) = {
+      println(s"YELLING: $s")
+    }
+  }
+  
   class Swimmer extends Swimming {}
   
   class SpeedoSwimmer extends Swimming {
@@ -23,4 +29,8 @@ object TraitsExample extends App {
   
   val speeder = new SpeedoSwimmer()
   speeder.swim();
+  
+  val loudSwimmer = new Swimmer() with Yelling
+  
+  loudSwimmer.yell("Yahoo!")
 }
