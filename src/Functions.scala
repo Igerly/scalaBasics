@@ -33,16 +33,16 @@ object Functions extends App {
     def apply(v1: String): Int = ???
       
   }
-  
+
   // Methods <-> Functions
   def shout( word: String ) = println(word + "!")
-  
+
   val shout1 = shout _
   
   val shout2 = new Function1[String, Unit] {
     def apply(word: String) = println(word + "!")
   } 
-  
+
   val shout3 = (word:String) => println(word + "!")  
   
   shout("hey _")
@@ -54,7 +54,6 @@ object Functions extends App {
   shout1.apply("hey") 
   shout2.apply("hey") 
   shout3.apply("hey") 
-  
   
   // filter function redefined with Pattern Matching
   def patternedFilter(list: List[Int], test: Int => Boolean): List[Int] = {

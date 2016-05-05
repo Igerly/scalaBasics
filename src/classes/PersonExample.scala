@@ -7,8 +7,10 @@ object PersonExample extends App {
     p.age = 43
   }
   
-  val casePerson = CasePerson("Petja", "Vasechkin", 12)
+  // .apply() in action
+  val casePerson: CasePerson = CasePerson("Petja", "Vasechkin", 12)
   
+  // From a tuple (actually, same .apply() in action)
   val tupled = CasePerson.tupled( ("Petja", "Vasechkin", 12) )
   
   val vasjas = CasePerson.curried("Vasja")

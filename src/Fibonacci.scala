@@ -4,7 +4,11 @@ object Fibonacci {
 
   def main(args: Array[String]): Unit = {
     val stream = fibbonacciSequence()
+    
+    // Computes lazily
     println(stream(7))
+    
+    // Caches computed values
     println(stream(9))
     println(stream(3))
   }
