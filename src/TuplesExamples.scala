@@ -22,4 +22,5 @@ object TuplesExamples {
     val average = (sum: Double) / numbers.length
     (sum, average)
   }
+  
 }
